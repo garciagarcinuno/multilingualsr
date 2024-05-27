@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title lang="es">Título</title>
+    <meta name="description" content="Description" />
+    <meta name="keywords" content="keyword, keyword, keyword" />
+
+    <meta property="og:title" content="Title" />
+    <meta property="og:description" content="Description" />
+    <meta
+      property="og:url"
+      content="https://xurxe.github.io/aria-labelling-test"
+    />
+    <meta
+      property="og:image"
+      content="https://source.unsplash.com/collection/1889046/1200x630"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link href="./global.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/6e00428cbd.js"
+      crossorigin="anonymous"
+    ></script>
+	<style>table,td,th{ border: 1px solid black; border-collapse: collapse;}</style>
+  </head>
+  <body>
+	<header>
+		<h2>Page Header</h2>
+		<nav aria-label="Main"><a href="#">Page 1</a> | <a href="#" aria-current="page">Page 2</a></nav>
+	</header>
+	<aside style="margin: 1rem; border: 2px solid black; padding: 0.2rem; width: fit-content">
+		<h3><a href="#footer">More info</a></h3>
+		<p>This is <a href="https://uxdesign.cc/the-troubled-state-of-screen-readers-in-multilingual-situations-f6a9da4ecdf3">based on an experiment by an author from <img alt="UX Collective" title="UX Collective" src="https://miro.medium.com/v2/resize:fill:48:48/1*mDhF9X4VO0rCrJvWFatyxg.png" width="24" height="24" loading="lazy"></a></p></aside>
+	<nav aria-label="Usted está aquí" lang="es">Experimento &gt; <a href="#" aria-current="page">Página actual</a></nav>
+	
+    <main>
+      <h1>Different accessible labelling methods</h1>
+      <ol>
+        <li>
+          <p>This button has <code>aria-label</code>:</p>
+          <button aria-label="Close">
+            <span aria-hidden="true">X</span>
+          </button>
+        </li>
+        <li>
+          <p>
+            This button has <code>aria-label</code> and an explicit
+            <code>lang</code> attribute:
+          </p>
+          <button lang="es" aria-label="Cerrar">
+            <span aria-hidden="true">X</span>
+          </button>
+        </li>
+        <li>
+          <p>
+            This button has <code>aria-labelledby</code>, and the visually
+            hidden label is outside:
+          </p>
+          <button aria-labelledby="lalala1">
+            <span aria-hidden="true">X</span>
+          </button>
+          <span id="lalala1" class="visually-hidden">Close</span>
+        </li>
+        <li>
+          <p>
+            This button has <code>aria-labelledby</code>, and the visually
+            hidden and <code>aria-hidden</code> label is outside:
+          </p>
+          <button aria-labelledby="lalala2">
+            <span aria-hidden="true">X</span>
+          </button>
+          <span id="lalala2" class="visually-hidden" aria-hidden="true"
+            >Close</span
+          >
+        </li>
+        <li>
+          <p>
+            This button has <code>aria-labelledby</code>, and the visually
+            hidden label is inside:
+          </p>
+          <button aria-labelledby="lalala3">
+            <span aria-hidden="true">X</span>
+            <span id="lalala3" class="visually-hidden">Close</span>
+          </button>
+        </li>
+        <li>
+          <p>
+            This button has <code>aria-labelledby</code>, and the visually
+            hidden and <code>aria-hidden</code> label is inside:
+          </p>
+          <button aria-labelledby="lalala4">
+            <span aria-hidden="true">X</span>
+            <span id="lalala4" class="visually-hidden" aria-hidden="true"
+              >Close</span
+            >
+          </button>
+        </li>
+        <li>
+          <p>This button has a visually hidden label inside:</p>
+          <button>
+            <span aria-hidden="true">X</span>
+            <span class="visually-hidden">Close</span>
+          </button>
+        </li>
+      </ol>
+	  
+	  <table>
+  <caption>CAT Editor</caption>
+  <tr>
+    <th scope="col" lang="en">EN</th>
+    <th scope="col" lang="es">ES</th>
+    <th scope="col">Status</th>
+  </tr>
+  <tr>
+    <td>Hello</td>
+    <td>Hola</td>
+    <td>100</td>
+  </tr>
+  <tr>
+    <td>Bye</td>
+    <td>Adiós</td>
+    <td>90</td>
+  </tr>
+</table>
+<details>
+	<summary>Translation of Word</summary>
+	<p lang="es">Palabra</p>
+</details>
+<dl>
+	<dt>Lemma</dt>
+	<dd lang="es">Casa</dd>
+	<dt role="term">Part of Speech</dt>
+	<dd lang="es" role="definition">Sustantivo femenino</dd>
+</dl>
+</main>
+      <footer aria-labelledby="data-source" id="footer">
+	  <h2 style="text-indent: -1000px" id="data-source" lang="es">Fuente de datos</h2>
+        Check out the
+        <a
+          href="https://github.com/xurxe/accessible-labelling-multilanguage-experiment"
+          >GitHub repository</a
+        >
+        for test results!
+      </footer>
+    
+  </body>
+</html>
