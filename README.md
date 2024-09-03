@@ -4,7 +4,7 @@ Welcome to this repository dedicated to examining the interaction between screen
 
 ## Overview
 
-In June 2020, Toivo García, an Accessibility Specialist, published the article ["The troubled state of screen readers in multilingual situations"](https://medium.com/@xurxe/the-troubled-state-of-screen-readers-in-multilingual-situations-f6a9da4ecdf3). The article clicked with us so much that we decided to dive deeper into his experiments. We shifted our focus to not just see how well or poorly SRs handle different multilingual HTML elements, but to really understand how SRs interact with both the content and the software involved (like browsers and speech synthesizers). We wanted to figure out how they can be set up to work in a multilingual context and why they produce speech output in one language or another for each block of information.
+In June 2020, Xurxe Toivo García, an Accessibility Specialist, published the article ["The troubled state of screen readers in multilingual situations"](https://medium.com/@xurxe/the-troubled-state-of-screen-readers-in-multilingual-situations-f6a9da4ecdf3). The article clicked with us so much that we decided to dive deeper into his experiments. We shifted our focus to not just see how well or poorly SRs handle different multilingual HTML elements, but to really understand how SRs interact with both the content and the software involved (like browsers and speech synthesizers). We wanted to figure out how they can be set up to work in a multilingual context and why they produce speech output in one language or another for each block of information.
 
 ## Screen readers, browsers, synthesisers and languages
 
@@ -34,7 +34,7 @@ We are currently in the process of finalizing an article that will provide a com
 ## Related resources
 
 - [Accessible labelling multilanguage experiment](https://github.com/xurxe/accessible-labelling-multilanguage-experiment), the original experiment by Xurxe Toivo García, which motivated our research and this experiment.
-- Toivo García, Xurxe (2020). “The troubled state of screen readers in multilingual situations”. UX Collective. [https://uxdesign.cc/the-troubled-state-of-screen-readers-in-multilingual-situations-f6a9da4ecdf3](https://uxdesign.cc/the-troubled-state-of-screen-readers-in-multilingual-situations-f6a9da4ecdf3).
+- García, Xurxe T. (2020). “The troubled state of screen readers in multilingual situations”. UX Collective. [https://uxdesign.cc/the-troubled-state-of-screen-readers-in-multilingual-situations-f6a9da4ecdf3](https://uxdesign.cc/the-troubled-state-of-screen-readers-in-multilingual-situations-f6a9da4ecdf3).
 - WebAIM (2020). "Semantic Structure: Regions, Headings, and Lists". WebAIM. Institute for Disability Research, Policy, and Practice (Utah State University). [https://webaim.org/techniques/semanticstructure](https://webaim.org/techniques/semanticstructure).
 
 ## Authors
@@ -48,4 +48,4 @@ This project is licensed under the MIT License - see the [LICENSE](https://githu
   
 
 **First published**: May 27, 2024  
-**Last updated**: May 27, 2024
+**Last updated**: September 3, 2024
